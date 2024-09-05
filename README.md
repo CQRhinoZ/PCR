@@ -20,6 +20,16 @@ TABLE II: PERFORMANCE COMPARISON IN ACC@K ON THREE DATASETS
     <th colspan="2">TaxiCQ</th>
   </tr>
   <tr>
+    <td>HA</td>
+    <td></td>
+    <td>RMSE</td>
+    <td>MAE</td>
+    <td>RMSE</td>
+    <td>MAE</td>
+    <td>RMSE</td>
+    <td>MAE</td>
+  </tr>
+  <tr>
     <td></td>
     <td></td>
     <td>RMSE</td>
