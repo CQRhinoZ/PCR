@@ -28,18 +28,18 @@ TABLE II: PERFORMANCE COMPARISON IN ACC@K ON THREE DATASETS
     <td>MAE</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td>RMSE</td>
-    <td>MAE</td>
-    <td>RMSE</td>
-    <td>MAE</td>
-    <td>RMSE</td>
-    <td>MAE</td>
-  </tr>
-  <tr>
+    <td>Basic</td>
     <td>HA</td>
-    <td></td>
+    <td>41.81</td>
+    <td>22.85</td>
+    <td>10.12</td>
+    <td>5.02</td>
+    <td>57.42</td>
+    <td>25.42</td>
+  </tr>
+    <tr>
+    <td>Basic</td>
+    <td>GRU</td>
     <td>41.81</td>
     <td>22.85</td>
     <td>10.12</td>
@@ -49,13 +49,8 @@ TABLE II: PERFORMANCE COMPARISON IN ACC@K ON THREE DATASETS
   </tr>
 </table>
 
-\begin{table}[h]
-\begin{center}
-\caption{COMPARISON WITH BASELINE METHODS ON THREE DATASETS}
-\resizebox{\linewidth}{!}{\begin{tabular}{cccccccc}
-\hline
-\multirow{2}{*}{Type}  & \multirow{2}{*}{Model} & \multicolumn{2}{c}{TaxiBJ}                       & \multicolumn{2}{c}{BikeNYC}                     & \multicolumn{2}{c}{TaxiCQ}                     \\ \cline{3-8} 
-                       &                        & RMSE                    & MAE                    & RMSE                   & MAE                    & RMSE                 & MAE                     \\ \hline
+| Type | Model | TaxiBJ | BikeNYC | TaxiCQ
+|      | RMSE  | MAE    | RMSE    | MAE | RMSE | MAE 
 \multirow{2}{*}{Basic} & HA                     &                    &                   &                   &                   &                &                    \\
                        & GRU                    & 17.76                   & 10.01                  & 8.48                   & 4.06                   & 33.45                & 19.16                   \\ \hline
 GCN                    & STSSL                  & 18.62                   & 11.42                  & 7.61                   & 5.09                   & 49.17                & 27.9                    \\ \hline
