@@ -1,6 +1,6 @@
-# GUGEN: Global User Graph Enhanced Network For Next POI Recommendation
+# PCR: A Parallel Convolution Residual Network For Traffic Flow Prediction
 
-This is a pytorch implementation of 《GUGEN: Global User Graph Enhanced Network For Next POI Recommendation》(IEEE TMC 2024, Accepted). 
+This is a pytorch implementation of 《PCR: A Parallel Convolution Residual Network For Traffic Flow Prediction》(IEEE TETCI 2024, under review). 
 
 Detail information will be released after publication.
 
