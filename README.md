@@ -37,25 +37,55 @@ TABLE II: PERFORMANCE COMPARISON IN ACC@K ON THREE DATASETS
     <td>57.42</td>
     <td>25.42</td>
   </tr>
-    <tr>
+  <tr>
     <td>Basic</td>
     <td>GRU</td>
-    <td>41.81</td>
-    <td>22.85</td>
-    <td>10.12</td>
-    <td>5.02</td>
-    <td>57.42</td>
-    <td>25.42</td>
+    <td>17.76</td>
+    <td>10.01</td>
+    <td>8.48</td>
+    <td>4.06 </td>
+    <td>33.45</td>
+    <td>19.16</td>
+  </tr>
+  <tr>
+    <td>GCN</td>
+    <td>STSSL</td>
+    <td>18.62</td>
+    <td>11.42</td>
+    <td>7.61</td>
+    <td>5.09</td>
+    <td>49.17</td>
+    <td>27.9</td>
+  </tr>
+  <tr>
+    <td>Attention</td>
+    <td>MSP-STTN</td>
+    <td>16.44</td>
+    <td>9.28</td>
+    <td>5.92</td>
+    <td>2.98</td>
+    <td>44.57</td>
+    <td>21.04</td>
+  </tr>
+  <tr>
+    <td>Attention</td>
+    <td>ASTCN</td>
+    <td>16.14</td>
+    <td>9.38</td>
+    <td>\textbf{4.65}</td>
+    <td>2.44</td>
+    <td>21.97</td>
+    <td>13.46</td>
   </tr>
 </table>
 
 | Type | Model | TaxiBJ | BikeNYC | TaxiCQ
 |      | RMSE  | MAE    | RMSE    | MAE | RMSE | MAE 
 \multirow{2}{*}{Basic} & HA                     &                    &                   &                   &                   &                &                    \\
-                       & GRU                    & 17.76                   & 10.01                  & 8.48                   & 4.06                   & 33.45                & 19.16                   \\ \hline
-GCN                    & STSSL                  & 18.62                   & 11.42                  & 7.61                   & 5.09                   & 49.17                & 27.9                    \\ \hline
-\multirow{6}{*}{Attention}              & MSP-STTN               & 16.44                   & 9.28                   & 5.92                   & 2.98                   & 44.57                & 21.04                   \\
-                       & ASTCN                  & 16.14                   & 9.38                   & \textbf{4.65} & 2.44                   & 21.97                & 13.46                   \\
+                       & GRU                    &                    &                   &                    &                   &                 &                    \\ \hline
+GCN                    & STSSL                  &                    &                   &                    &                    &                 &                     \\ \hline
+\multirow{6}{*}{Attention}              & MSP-STTN               &                    &                    &                    &                    &                 &                    \\
+                       & ASTCN                  &                    &                    &  &                    &                 &                    \\
                        & ACFM                   & 16.07                   & 9.34                   & 5.73                   & 2.86                   & 27.54                & 13.79                   \\
 \multicolumn{1}{l}{}   & MCSTL                  & 16.03                   & 9.28                   & 5.17                   & 2.52                   & 23.83                & 16.47                   \\
                        & ST-GSP                 & 16.03                   & 9.26                   & 5.81                   & 2.92                   & 31.11                & 15.4                    \\
