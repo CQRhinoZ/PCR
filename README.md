@@ -28,7 +28,7 @@ TABLE II: PERFORMANCE COMPARISON IN ACC@K ON THREE DATASETS
     <td>MAE</td>
   </tr>
   <tr>
-    <td>Basic</td>
+    <th rowspan="2">Basic</td>
     <td>HA</td>
     <td>41.81</td>
     <td>22.85</td>
@@ -38,7 +38,6 @@ TABLE II: PERFORMANCE COMPARISON IN ACC@K ON THREE DATASETS
     <td>25.42</td>
   </tr>
   <tr>
-    <td>Basic</td>
     <td>GRU</td>
     <td>17.76</td>
     <td>10.01</td>
