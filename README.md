@@ -57,7 +57,7 @@ TABLE II: PERFORMANCE COMPARISON IN ACC@K ON THREE DATASETS
     <td>27.9</td>
   </tr>
   <tr>
-    <td>Attention</td>
+    <th rowspan="6">Attention</td>
     <td>MSP-STTN</td>
     <td>16.44</td>
     <td>9.28</td>
@@ -67,37 +67,89 @@ TABLE II: PERFORMANCE COMPARISON IN ACC@K ON THREE DATASETS
     <td>21.04</td>
   </tr>
   <tr>
-    <td>Attention</td>
     <td>ASTCN</td>
     <td>16.14</td>
     <td>9.38</td>
-    <td>\textbf{4.65}</td>
+    <td>4.65</td>
     <td>2.44</td>
     <td>21.97</td>
     <td>13.46</td>
   </tr>
+  <tr>
+    <td>ACFM</td>
+    <td>16.07</td>
+    <td>9.34</td>
+    <td>5.73</td>
+    <td>2.86</td>
+    <td>27.54</td>
+    <td>13.79</td>
+  </tr>
+  <tr>
+    <td>MCSTL</td>
+    <td>16.03</td>
+    <td>9.28</td>
+    <td>5.17</td>
+    <td>2.52</td>
+    <td>23.83</td>
+    <td>16.47</td>
+  </tr>
+  <tr>
+    <td>ST-GSP</td>
+    <td>16.03</td>
+    <td>9.26</td>
+    <td>5.81</td>
+    <td>2.92</td>
+    <td>31.11</td>
+    <td>15.4</td>
+  </tr>
+  <tr>
+    <td>RATFM</td>
+    <td>16.01</td>
+    <td>9.24</td>
+    <td>5.48</td>
+    <td>2.75</td>
+    <td>24.1</td>
+    <td>17.62</td>
+  </tr>
+  <tr>
+    <th  rowspan="4">CNN</td>
+    <td>MHSRN</td>
+    <td>17.54</td>
+    <td>10.45</td>
+    <td>4.79</td>
+    <td>2.23</td>
+    <td>23.33</td>
+    <td>13.91</td>
+  </tr>
+  <tr>
+    <td>STResNet</td>
+    <td>16.69</td>
+    <td>9.46</td>
+    <td>6.33</td>
+    <td>2.94</td>
+    <td>26.16</td>
+    <td>14.97</td>
+  </tr>
+  <tr>
+    <td>LMST3D-ResNet</td>
+    <td>16.37</td>
+    <td>9.36</td>
+    <td>5.13</td>
+    <td>2.48</td>
+    <td>34.96</td>
+    <td>16.53</td>
+  </tr>
+  <tr>
+    <td>PCR(Ours)</td>
+    <td>15.94</td>
+    <td>9.23</td>
+    <td>4.99</td>
+    <td>2.43</td>
+    <td>20</td>
+    <td>12.21</td>
+  </tr>
 </table>
 
-| Type | Model | TaxiBJ | BikeNYC | TaxiCQ
-|      | RMSE  | MAE    | RMSE    | MAE | RMSE | MAE 
-\multirow{2}{*}{Basic} & HA                     &                    &                   &                   &                   &                &                    \\
-                       & GRU                    &                    &                   &                    &                   &                 &                    \\ \hline
-GCN                    & STSSL                  &                    &                   &                    &                    &                 &                     \\ \hline
-\multirow{6}{*}{Attention}              & MSP-STTN               &                    &                    &                    &                    &                 &                    \\
-                       & ASTCN                  &                    &                    &  &                    &                 &                    \\
-                       & ACFM                   & 16.07                   & 9.34                   & 5.73                   & 2.86                   & 27.54                & 13.79                   \\
-\multicolumn{1}{l}{}   & MCSTL                  & 16.03                   & 9.28                   & 5.17                   & 2.52                   & 23.83                & 16.47                   \\
-                       & ST-GSP                 & 16.03                   & 9.26                   & 5.81                   & 2.92                   & 31.11                & 15.4                    \\
-                       & RATFM                  & 16.01                   & 9.24                   & 5.48                   & 2.75                   & 24.1                 & 17.62                   \\ \hline
-\multirow{4}{*}{CNN}   & MHSRN                  & 17.54                   & 10.45                  & 4.79                   & \textbf{2.23} & 23.33                & 13.91                   \\
-                       & STResNet               & 16.69                   & 9.46                   & 6.33                   & 2.94                   & 26.16                & 14.97                   \\
-                       & LMST3D-ResNet          & 16.37                   & 9.36                   & 5.13                   & 2.48                   & 34.96                & 16.53                   \\
-                       & PCR(Ours)                    & \textbf{15.94} & \textbf{9.23} & 4.99                   & 2.43                   & \textbf{20} & \textbf{12.21} \\ \hline
-\end{tabular}
-}
-\label{table3}
-\end{center}
-\end{table}
 
 ## Architecture
 
