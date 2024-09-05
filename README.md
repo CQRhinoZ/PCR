@@ -13,27 +13,32 @@ Traffic flow prediction is crucial in smart cities and traffic management, yet i
 TABLE II: PERFORMANCE COMPARISON IN ACC@K ON THREE DATASETS
 <table style="width:100%;">
   <tr>
+    <th rowspan="2">Type</th>
     <th rowspan="2">Model</th>
-    <th rowspan="2">Ref</th>
-    <th colspan="4">Foursquare-NYC</th>
-    <th colspan="4">Foursquare-TKY</th>
-    <th colspan="4">Gowalla-CA</th>
+    <th colspan="2">TaxiBJ</th>
+    <th colspan="2">BikeNYC</th>
+    <th colspan="2">TaxiCQ</th>
   </tr>
   <tr>
-    <td>Acc@1</td>
-    <td>Acc@5</td>
-    <td>Acc@10</td>
-    <td>Acc@20</td>
-    <td>Acc@1</td>
-    <td>Acc@5</td>
-    <td>Acc@10</td>
-    <td>Acc@20</td>
-    <td>Acc@1</td>
-    <td>Acc@5</td>
-    <td>Acc@10</td>
-    <td>Acc@20</td>
+    <td></td>
+    <td></td>
+    <td>RMSE</td>
+    <td>MAE</td>
+    <td>RMSE</td>
+    <td>MAE</td>
+    <td>RMSE</td>
+    <td>MAE</td>
   </tr>
-
+  <tr>
+    <td>HA</td>
+    <td></td>
+    <td>41.81</td>
+    <td>22.85</td>
+    <td>10.12</td>
+    <td>5.02</td>
+    <td>57.42</td>
+    <td>25.42</td>
+  </tr>
 </table>
 
 \begin{table}[h]
@@ -43,7 +48,7 @@ TABLE II: PERFORMANCE COMPARISON IN ACC@K ON THREE DATASETS
 \hline
 \multirow{2}{*}{Type}  & \multirow{2}{*}{Model} & \multicolumn{2}{c}{TaxiBJ}                       & \multicolumn{2}{c}{BikeNYC}                     & \multicolumn{2}{c}{TaxiCQ}                     \\ \cline{3-8} 
                        &                        & RMSE                    & MAE                    & RMSE                   & MAE                    & RMSE                 & MAE                     \\ \hline
-\multirow{2}{*}{Basic} & HA                     & 41.81                   & 22.85                  & 10.12                  & 5.02                   & 57.42                & 25.42                   \\
+\multirow{2}{*}{Basic} & HA                     &                    &                   &                   &                   &                &                    \\
                        & GRU                    & 17.76                   & 10.01                  & 8.48                   & 4.06                   & 33.45                & 19.16                   \\ \hline
 GCN                    & STSSL                  & 18.62                   & 11.42                  & 7.61                   & 5.09                   & 49.17                & 27.9                    \\ \hline
 \multirow{6}{*}{Attention}              & MSP-STTN               & 16.44                   & 9.28                   & 5.92                   & 2.98                   & 44.57                & 21.04                   \\
@@ -74,7 +79,7 @@ GCN                    & STSSL                  & 18.62                   & 11.4
 - Clone this repo
 
 ```
-git clone https://github.com/CQRhinoZ/GUGEN
+git clone https://github.com/CQRhinoZ/PCR
 ```
 
 ## Project Structure
@@ -92,7 +97,7 @@ After installing the dependency:
 
 ## Train
 
-- Download datasets from [here](https://drive.google.com/drive/folders/1o72mNxUgSJX43KcQ2Tg_YE3N3oJEZX5T?usp=drive_link).
+- Download datasets from [here](https://github.com/CQRhinoZ/TaxiCQ).
 - Run `train_model.py`.
 
 
