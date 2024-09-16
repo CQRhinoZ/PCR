@@ -2,8 +2,6 @@
 
 This is a pytorch implementation of 《PCR: A Parallel Convolution Residual Network For Traffic Flow Prediction》(IEEE TETCI 2024, under review). 
 
-Detail information will be released after publication.
-
 
 ## Abstract
 
@@ -168,9 +166,9 @@ git clone https://github.com/CQRhinoZ/PCR
 
 ## Project Structure
 
-- train_model.py: The training code of our model
-- utils.py: Dataset code
-- Model.py: main file for Model
+- Train_TaxiBJ.py: The training code of our model
+- load_test.py: The testing code for TaxiBJ
+- model.py: main file for Model
 - requirements.txt: List the pip dependencies
 
 ## Dependency
@@ -181,9 +179,9 @@ After installing the dependency:
 
 ## Train
 
-- Download datasets from [here](https://github.com/CQRhinoZ/TaxiCQ).
-- Run `train_model.py`.
-
+- Download datasets from [here](https://drive.google.com/drive/folders/1sbVO27r6zWedQ_UyruiXOYDjbdKWsBSj?usp=drive_link).
+- Run `Train_TaxiBJ.py`.
+  
 
 ## Citation
 
