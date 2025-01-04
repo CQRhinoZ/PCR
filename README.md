@@ -1,6 +1,6 @@
 # PCR: A Parallel Convolution Residual Network For Traffic Flow Prediction
 
-This is a pytorch implementation of 《PCR: A Parallel Convolution Residual Network For Traffic Flow Prediction》(IEEE TETCI 2025, [DOI]https://doi.org/10.1109/TETCI.2025.3525656). 
+This is a pytorch implementation of 《PCR: A Parallel Convolution Residual Network For Traffic Flow Prediction》(IEEE TETCI 2025, [DOI](https://doi.org/10.1109/TETCI.2025.3525656). 
 
 
 ## Abstract
